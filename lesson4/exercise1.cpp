@@ -42,7 +42,7 @@ class Classrom : public Room
 
     Classrom beginNextLesson(string lessonName)
     {
-        return new Classrom(width, length, capacity, lessonName);
+        return Classrom(width, lenght, capacity, lessonName);
     }
 };
 
@@ -50,5 +50,6 @@ int main()
 {
     Classrom first(11.2, 10.0, 25, "English");
     Classrom second = first.beginNextLesson("Math");
+    cout << first.checkSize() << endl << first.checkWhatIsHappening() << endl << second.checkSize() << endl << second.checkWhatIsHappening() << endl;
     return 0;
 }
