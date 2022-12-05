@@ -10,5 +10,5 @@ class twoNumberStatistics
     
     int min();
 
-    int avrage();
+    float avrage();
 };

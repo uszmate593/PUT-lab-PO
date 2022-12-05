@@ -16,7 +16,7 @@ int twoNumberStatistics::min()
     return firstValue > secondValue ? secondValue : firstValue;
 }
 
-int twoNumberStatistics::avrage()
+float twoNumberStatistics::avrage()
 {
-    return (firstValue + secondValue) / 2;
+    return (firstValue + secondValue) / 2.0;
 }

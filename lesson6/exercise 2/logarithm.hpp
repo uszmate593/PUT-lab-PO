@@ -1,4 +1,6 @@
 #include<cmath>
+#include<stdexcept>
+#include<iostream>
 #include"number.hpp"
 
 class Logarithm : public Number

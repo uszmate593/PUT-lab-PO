@@ -5,6 +5,6 @@ using namespace std;
 
 int main()
 {
-    twoNumberStatistics example(12 , 4);
+    twoNumberStatistics example(12 , 5);
     cout << example.avrage() << " " << example.max() << " " << example.min() << endl;
 }
