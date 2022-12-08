@@ -12,7 +12,7 @@ double Logarithm::doubleValue()
     {
         if(base != 1 && base > 0)
             throw(std::invalid_argument("Base of logarithm must be grater than 0 and not equal to 1"));
-        if(argument <)
+        if(argument < 0)
             throw(std::invalid_argument("Argument of lagarithm cannot be greater then 0"));
         return log(argument) / log(base);
     }
