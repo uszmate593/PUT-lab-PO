@@ -5,9 +5,9 @@ using namespace std;
 class Room
 {
     public:
-    virtual string checkWhatIsHappening() = 0;
-    virtual float checkSize() = 0;
-    virtual int checkHowManyPeopleCanGetInside() = 0;
+    virtual string WhatIsHappening() = 0;
+    virtual float Size() = 0;
+    virtual int HowManyPeopleCanGetInside() = 0;
 };
 
 class Classrom : public Room
@@ -25,17 +25,17 @@ class Classrom : public Room
         this->currentLesson = currentLesson;
     }
     
-    string checkWhatIsHappening()
+    string WhatIsHappening()
     {
         return currentLesson;
     }
 
-    float checkSize()
+    float Size()
     {
         return width * lenght;
     }
 
-    int checkHowManyPeopleCanGetInside()
+    int HowManyPeopleCanGetInside()
     {
         return capacity;
     }
@@ -50,6 +50,6 @@ int main()
 {
     Classrom first(11.2, 10.0, 25, "English");
     Classrom second = first.beginNextLesson("Math");
-    cout << first.checkSize() << endl << first.checkWhatIsHappening() << endl << second.checkSize() << endl << second.checkWhatIsHappening() << endl;
+    cout << first.Size() << endl << first.WhatIsHappening() << endl << second.Size() << endl << second.WhatIsHappening() << endl;
     return 0;
 }
